@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC7C3C7E192408E000C6E493 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C7D192408E000C6E493 /* Foundation.framework */; };
+		DC7C3C80192408E000C6E493 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C7F192408E000C6E493 /* CoreGraphics.framework */; };
+		DC7C3C82192408E000C6E493 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C81192408E000C6E493 /* UIKit.framework */; };
+		DC7C3C88192408E000C6E493 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC7C3C86192408E000C6E493 /* InfoPlist.strings */; };
+		DC7C3C8A192408E000C6E493 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3C89192408E000C6E493 /* main.m */; };
+		DC7C3C8E192408E000C6E493 /* VSFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3C8D192408E000C6E493 /* VSFAppDelegate.m */; };
+		DC7C3C91192408E000C6E493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7C3C8F192408E000C6E493 /* Main.storyboard */; };
+		DC7C3C94192408E000C6E493 /* VSFMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3C93192408E000C6E493 /* VSFMasterViewController.m */; };
+		DC7C3C97192408E000C6E493 /* VSFDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3C96192408E000C6E493 /* VSFDetailViewController.m */; };
+		DC7C3C99192408E000C6E493 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7C3C98192408E000C6E493 /* Images.xcassets */; };
+		DC7C3CA0192408E000C6E493 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C9F192408E000C6E493 /* XCTest.framework */; };
+		DC7C3CA1192408E000C6E493 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C7D192408E000C6E493 /* Foundation.framework */; };
+		DC7C3CA2192408E000C6E493 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C81192408E000C6E493 /* UIKit.framework */; };
+		DC7C3CAA192408E000C6E493 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC7C3CA8192408E000C6E493 /* InfoPlist.strings */; };
+		DC7C3CAC192408E000C6E493 /* NewsForHackersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3CAB192408E000C6E493 /* NewsForHackersTests.m */; };
+		DC7C3CB6192408F800C6E493 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3CB5192408F800C6E493 /* libxml2.dylib */; };
+		DC7C3CBD1924090C00C6E493 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3CB81924090C00C6E493 /* TFHpple.m */; };
+		DC7C3CBE1924090C00C6E493 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3CBA1924090C00C6E493 /* TFHppleElement.m */; };
+		DC7C3CBF1924090C00C6E493 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3CBC1924090C00C6E493 /* XPathQuery.m */; };
+		DC7C3CC419240AB000C6E493 /* VSFHackerNewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3CC319240AB000C6E493 /* VSFHackerNewsObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC7C3CA3192408E000C6E493 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7C3C72192408E000C6E493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7C3C79192408E000C6E493;
+			remoteInfo = NewsForHackers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC7C3C7A192408E000C6E493 /* NewsForHackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsForHackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7C3C7D192408E000C6E493 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DC7C3C7F192408E000C6E493 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DC7C3C81192408E000C6E493 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DC7C3C85192408E000C6E493 /* NewsForHackers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsForHackers-Info.plist"; sourceTree = "<group>"; };
+		DC7C3C87192408E000C6E493 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC7C3C89192408E000C6E493 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC7C3C8B192408E000C6E493 /* NewsForHackers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewsForHackers-Prefix.pch"; sourceTree = "<group>"; };
+		DC7C3C8C192408E000C6E493 /* VSFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSFAppDelegate.h; sourceTree = "<group>"; };
+		DC7C3C8D192408E000C6E493 /* VSFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSFAppDelegate.m; sourceTree = "<group>"; };
+		DC7C3C90192408E000C6E493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC7C3C92192408E000C6E493 /* VSFMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSFMasterViewController.h; sourceTree = "<group>"; };
+		DC7C3C93192408E000C6E493 /* VSFMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSFMasterViewController.m; sourceTree = "<group>"; };
+		DC7C3C95192408E000C6E493 /* VSFDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSFDetailViewController.h; sourceTree = "<group>"; };
+		DC7C3C96192408E000C6E493 /* VSFDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSFDetailViewController.m; sourceTree = "<group>"; };
+		DC7C3C98192408E000C6E493 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC7C3C9E192408E000C6E493 /* NewsForHackersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsForHackersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7C3C9F192408E000C6E493 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DC7C3CA7192408E000C6E493 /* NewsForHackersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsForHackersTests-Info.plist"; sourceTree = "<group>"; };
+		DC7C3CA9192408E000C6E493 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC7C3CAB192408E000C6E493 /* NewsForHackersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsForHackersTests.m; sourceTree = "<group>"; };
+		DC7C3CB5192408F800C6E493 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		DC7C3CB71924090C00C6E493 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		DC7C3CB81924090C00C6E493 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		DC7C3CB91924090C00C6E493 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		DC7C3CBA1924090C00C6E493 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		DC7C3CBB1924090C00C6E493 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		DC7C3CBC1924090C00C6E493 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		DC7C3CC219240AB000C6E493 /* VSFHackerNewsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSFHackerNewsObject.h; sourceTree = "<group>"; };
+		DC7C3CC319240AB000C6E493 /* VSFHackerNewsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSFHackerNewsObject.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC7C3C77192408E000C6E493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7C3CB6192408F800C6E493 /* libxml2.dylib in Frameworks */,
+				DC7C3C80192408E000C6E493 /* CoreGraphics.framework in Frameworks */,
+				DC7C3C82192408E000C6E493 /* UIKit.framework in Frameworks */,
+				DC7C3C7E192408E000C6E493 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7C3C9B192408E000C6E493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7C3CA0192408E000C6E493 /* XCTest.framework in Frameworks */,
+				DC7C3CA2192408E000C6E493 /* UIKit.framework in Frameworks */,
+				DC7C3CA1192408E000C6E493 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC7C3C71192408E000C6E493 = {
+			isa = PBXGroup;
+			children = (
+				DC7C3CC119240A8F00C6E493 /* Model */,
+				DC7C3CC01924091700C6E493 /* Hpple */,
+				DC7C3C83192408E000C6E493 /* NewsForHackers */,
+				DC7C3CA5192408E000C6E493 /* NewsForHackersTests */,
+				DC7C3C7C192408E000C6E493 /* Frameworks */,
+				DC7C3C7B192408E000C6E493 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC7C3C7B192408E000C6E493 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C3C7A192408E000C6E493 /* NewsForHackers.app */,
+				DC7C3C9E192408E000C6E493 /* NewsForHackersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC7C3C7C192408E000C6E493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C3CB5192408F800C6E493 /* libxml2.dylib */,
+				DC7C3C7D192408E000C6E493 /* Foundation.framework */,
+				DC7C3C7F192408E000C6E493 /* CoreGraphics.framework */,
+				DC7C3C81192408E000C6E493 /* UIKit.framework */,
+				DC7C3C9F192408E000C6E493 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC7C3C83192408E000C6E493 /* NewsForHackers */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C3C8C192408E000C6E493 /* VSFAppDelegate.h */,
+				DC7C3C8D192408E000C6E493 /* VSFAppDelegate.m */,
+				DC7C3C8F192408E000C6E493 /* Main.storyboard */,
+				DC7C3C92192408E000C6E493 /* VSFMasterViewController.h */,
+				DC7C3C93192408E000C6E493 /* VSFMasterViewController.m */,
+				DC7C3C95192408E000C6E493 /* VSFDetailViewController.h */,
+				DC7C3C96192408E000C6E493 /* VSFDetailViewController.m */,
+				DC7C3C98192408E000C6E493 /* Images.xcassets */,
+				DC7C3C84192408E000C6E493 /* Supporting Files */,
+			);
+			path = NewsForHackers;
+			sourceTree = "<group>";
+		};
+		DC7C3C84192408E000C6E493 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C3C85192408E000C6E493 /* NewsForHackers-Info.plist */,
+				DC7C3C86192408E000C6E493 /* InfoPlist.strings */,
+				DC7C3C89192408E000C6E493 /* main.m */,
+				DC7C3C8B192408E000C6E493 /* NewsForHackers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC7C3CA5192408E000C6E493 /* NewsForHackersTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C3CAB192408E000C6E493 /* NewsForHackersTests.m */,
+				DC7C3CA6192408E000C6E493 /* Supporting Files */,
+			);
+			path = NewsForHackersTests;
+			sourceTree = "<group>";
+		};
+		DC7C3CA6192408E000C6E493 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C3CA7192408E000C6E493 /* NewsForHackersTests-Info.plist */,
+				DC7C3CA8192408E000C6E493 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC7C3CC01924091700C6E493 /* Hpple */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C3CB71924090C00C6E493 /* TFHpple.h */,
+				DC7C3CB81924090C00C6E493 /* TFHpple.m */,
+				DC7C3CB91924090C00C6E493 /* TFHppleElement.h */,
+				DC7C3CBA1924090C00C6E493 /* TFHppleElement.m */,
+				DC7C3CBB1924090C00C6E493 /* XPathQuery.h */,
+				DC7C3CBC1924090C00C6E493 /* XPathQuery.m */,
+			);
+			name = Hpple;
+			sourceTree = "<group>";
+		};
+		DC7C3CC119240A8F00C6E493 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC7C3CC219240AB000C6E493 /* VSFHackerNewsObject.h */,
+				DC7C3CC319240AB000C6E493 /* VSFHackerNewsObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC7C3C79192408E000C6E493 /* NewsForHackers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7C3CAF192408E000C6E493 /* Build configuration list for PBXNativeTarget "NewsForHackers" */;
+			buildPhases = (
+				DC7C3C76192408E000C6E493 /* Sources */,
+				DC7C3C77192408E000C6E493 /* Frameworks */,
+				DC7C3C78192408E000C6E493 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewsForHackers;
+			productName = NewsForHackers;
+			productReference = DC7C3C7A192408E000C6E493 /* NewsForHackers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC7C3C9D192408E000C6E493 /* NewsForHackersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7C3CB2192408E000C6E493 /* Build configuration list for PBXNativeTarget "NewsForHackersTests" */;
+			buildPhases = (
+				DC7C3C9A192408E000C6E493 /* Sources */,
+				DC7C3C9B192408E000C6E493 /* Frameworks */,
+				DC7C3C9C192408E000C6E493 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7C3CA4192408E000C6E493 /* PBXTargetDependency */,
+			);
+			name = NewsForHackersTests;
+			productName = NewsForHackersTests;
+			productReference = DC7C3C9E192408E000C6E493 /* NewsForHackersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC7C3C72192408E000C6E493 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VSF;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Vincent Fong";
+				TargetAttributes = {
+					DC7C3C9D192408E000C6E493 = {
+						TestTargetID = DC7C3C79192408E000C6E493;
+					};
+				};
+			};
+			buildConfigurationList = DC7C3C75192408E000C6E493 /* Build configuration list for PBXProject "NewsForHackers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC7C3C71192408E000C6E493;
+			productRefGroup = DC7C3C7B192408E000C6E493 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC7C3C79192408E000C6E493 /* NewsForHackers */,
+				DC7C3C9D192408E000C6E493 /* NewsForHackersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC7C3C78192408E000C6E493 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7C3C99192408E000C6E493 /* Images.xcassets in Resources */,
+				DC7C3C88192408E000C6E493 /* InfoPlist.strings in Resources */,
+				DC7C3C91192408E000C6E493 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7C3C9C192408E000C6E493 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7C3CAA192408E000C6E493 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC7C3C76192408E000C6E493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7C3CBE1924090C00C6E493 /* TFHppleElement.m in Sources */,
+				DC7C3CC419240AB000C6E493 /* VSFHackerNewsObject.m in Sources */,
+				DC7C3CBF1924090C00C6E493 /* XPathQuery.m in Sources */,
+				DC7C3CBD1924090C00C6E493 /* TFHpple.m in Sources */,
+				DC7C3C8E192408E000C6E493 /* VSFAppDelegate.m in Sources */,
+				DC7C3C97192408E000C6E493 /* VSFDetailViewController.m in Sources */,
+				DC7C3C94192408E000C6E493 /* VSFMasterViewController.m in Sources */,
+				DC7C3C8A192408E000C6E493 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7C3C9A192408E000C6E493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7C3CAC192408E000C6E493 /* NewsForHackersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC7C3CA4192408E000C6E493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7C3C79192408E000C6E493 /* NewsForHackers */;
+			targetProxy = DC7C3CA3192408E000C6E493 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC7C3C86192408E000C6E493 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7C3C87192408E000C6E493 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DC7C3C8F192408E000C6E493 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7C3C90192408E000C6E493 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC7C3CA8192408E000C6E493 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7C3CA9192408E000C6E493 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC7C3CAD192408E000C6E493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DC7C3CAE192408E000C6E493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC7C3CB0192408E000C6E493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewsForHackers/NewsForHackers-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "NewsForHackers/NewsForHackers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DC7C3CB1192408E000C6E493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewsForHackers/NewsForHackers-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				INFOPLIST_FILE = "NewsForHackers/NewsForHackers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DC7C3CB3192408E000C6E493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NewsForHackers.app/NewsForHackers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewsForHackers/NewsForHackers-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NewsForHackersTests/NewsForHackersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DC7C3CB4192408E000C6E493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NewsForHackers.app/NewsForHackers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NewsForHackers/NewsForHackers-Prefix.pch";
+				INFOPLIST_FILE = "NewsForHackersTests/NewsForHackersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC7C3C75192408E000C6E493 /* Build configuration list for PBXProject "NewsForHackers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7C3CAD192408E000C6E493 /* Debug */,
+				DC7C3CAE192408E000C6E493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7C3CAF192408E000C6E493 /* Build configuration list for PBXNativeTarget "NewsForHackers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7C3CB0192408E000C6E493 /* Debug */,
+				DC7C3CB1192408E000C6E493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC7C3CB2192408E000C6E493 /* Build configuration list for PBXNativeTarget "NewsForHackersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7C3CB3192408E000C6E493 /* Debug */,
+				DC7C3CB4192408E000C6E493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC7C3C72192408E000C6E493 /* Project object */;
+}
