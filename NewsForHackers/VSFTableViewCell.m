@@ -9,6 +9,9 @@
 #import "VSFTableViewCell.h"
 
 @implementation VSFTableViewCell
+@synthesize title = _title;
+@synthesize url = _url;
+@synthesize hnImage = _hnImage;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

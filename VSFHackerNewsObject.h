@@ -11,4 +11,7 @@
 @interface VSFHackerNewsObject : NSObject
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) UIImage *img;
+
+-(void) getLargestImage;
 @end

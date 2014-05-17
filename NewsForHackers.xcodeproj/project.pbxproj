@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC72C0C319272F4A00125CEF /* Default_tablecell.png in Resources */ = {isa = PBXBuildFile; fileRef = DC72C0C219272F4A00125CEF /* Default_tablecell.png */; };
+		DC72C0C51927352900125CEF /* VSFTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC72C0C41927352900125CEF /* VSFTableViewCell.xib */; };
+		DC72C0C81927362000125CEF /* VSFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC72C0C71927362000125CEF /* VSFTableViewCell.m */; };
 		DC7C3C7E192408E000C6E493 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C7D192408E000C6E493 /* Foundation.framework */; };
 		DC7C3C80192408E000C6E493 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C7F192408E000C6E493 /* CoreGraphics.framework */; };
 		DC7C3C82192408E000C6E493 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C81192408E000C6E493 /* UIKit.framework */; };
@@ -40,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC72C0C219272F4A00125CEF /* Default_tablecell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default_tablecell.png; path = NewsForHackers/Default_tablecell.png; sourceTree = "<group>"; };
+		DC72C0C41927352900125CEF /* VSFTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSFTableViewCell.xib; sourceTree = "<group>"; };
+		DC72C0C61927362000125CEF /* VSFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSFTableViewCell.h; sourceTree = "<group>"; };
+		DC72C0C71927362000125CEF /* VSFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSFTableViewCell.m; sourceTree = "<group>"; };
 		DC7C3C7A192408E000C6E493 /* NewsForHackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsForHackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC7C3C7D192408E000C6E493 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC7C3C7F192408E000C6E493 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,9 +104,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC72C0C119272DDF00125CEF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DC72C0C219272F4A00125CEF /* Default_tablecell.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		DC7C3C71192408E000C6E493 = {
 			isa = PBXGroup;
 			children = (
+				DC72C0C119272DDF00125CEF /* Images */,
 				DC7C3CC119240A8F00C6E493 /* Model */,
 				DC7C3CC01924091700C6E493 /* Hpple */,
 				DC7C3C83192408E000C6E493 /* NewsForHackers */,
@@ -138,6 +154,9 @@
 				DC7C3C8F192408E000C6E493 /* Main.storyboard */,
 				DC7C3C92192408E000C6E493 /* VSFMasterViewController.h */,
 				DC7C3C93192408E000C6E493 /* VSFMasterViewController.m */,
+				DC72C0C41927352900125CEF /* VSFTableViewCell.xib */,
+				DC72C0C61927362000125CEF /* VSFTableViewCell.h */,
+				DC72C0C71927362000125CEF /* VSFTableViewCell.m */,
 				DC7C3C95192408E000C6E493 /* VSFDetailViewController.h */,
 				DC7C3C96192408E000C6E493 /* VSFDetailViewController.m */,
 				DC7C3C98192408E000C6E493 /* Images.xcassets */,
@@ -274,8 +293,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC72C0C319272F4A00125CEF /* Default_tablecell.png in Resources */,
 				DC7C3C99192408E000C6E493 /* Images.xcassets in Resources */,
 				DC7C3C88192408E000C6E493 /* InfoPlist.strings in Resources */,
+				DC72C0C51927352900125CEF /* VSFTableViewCell.xib in Resources */,
 				DC7C3C91192408E000C6E493 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +321,7 @@
 				DC7C3CBF1924090C00C6E493 /* XPathQuery.m in Sources */,
 				DC7C3CBD1924090C00C6E493 /* TFHpple.m in Sources */,
 				DC7C3C8E192408E000C6E493 /* VSFAppDelegate.m in Sources */,
+				DC72C0C81927362000125CEF /* VSFTableViewCell.m in Sources */,
 				DC7C3C97192408E000C6E493 /* VSFDetailViewController.m in Sources */,
 				DC7C3C94192408E000C6E493 /* VSFMasterViewController.m in Sources */,
 				DC7C3C8A192408E000C6E493 /* main.m in Sources */,
@@ -509,6 +531,7 @@
 				DC7C3CB1192408E000C6E493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC7C3CB2192408E000C6E493 /* Build configuration list for PBXNativeTarget "NewsForHackersTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +540,7 @@
 				DC7C3CB4192408E000C6E493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

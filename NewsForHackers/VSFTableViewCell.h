@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface VSFTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel *title;
+@property (nonatomic, weak) IBOutlet UILabel *url;
+@property (nonatomic, weak) IBOutlet UIImageView *hnImage;
+
 
 @end

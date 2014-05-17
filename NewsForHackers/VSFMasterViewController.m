@@ -9,6 +9,7 @@
 #import "VSFMasterViewController.h"
 #import "TFHpple.h"
 #import "VSFHackerNewsObject.h"
+#import "VSFTableViewCell.h"
 
 #import "VSFDetailViewController.h"
 
@@ -39,16 +40,22 @@
         
         hnObject.title = [[element firstChild] content];
         hnObject.url = [element objectForKey:@"href"];
+        [hnObject getLargestImage];
+        NSLog(@"%@", hnObject.img);
+        
     }
     
     _objects = newHNObjects;
     //NSLog(@"%@", newHNObjects);
-    for (VSFHackerNewsObject *hnobject in newHNObjects) {
+    
+    //Debugging script
+    /*for (VSFHackerNewsObject *hnobject in newHNObjects) {
         NSLog(@"%@, %@", hnobject.title, hnobject.url);
-    }
+    }*/
                                         
     
 }
+
 
 
 - (void)viewDidLoad
@@ -86,22 +93,33 @@
     return _objects.count;
 }
 
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIndentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIndentifier];
+    static NSString *CellIndentifier = @"VSFTableViewCell";
+    VSFTableViewCell *cell = (VSFTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIndentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIndentifier];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"VSFTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
 
     /*NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [object description];*/
     
     VSFHackerNewsObject *thisHNObject = [_objects objectAtIndex:indexPath.row];
-    cell.textLabel.text = thisHNObject.title;
-    cell.detailTextLabel.text = thisHNObject.url;
+    cell.title.text = thisHNObject.title;
+    cell.url.text = thisHNObject.url;
+    //cell.imageView.image = thisHNObject.img;
+    if (thisHNObject.img) {
+        cell.hnImage.image = thisHNObject.img;
+    } else {
+        cell.hnImage.image = [UIImage imageWithContentsOfFile:@"Default_tablecell.png"];
+    }
+    
     return cell;
 }
 
@@ -136,6 +154,15 @@
     return YES;
 }
 */
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"showDetail" sender:cell];
+    
+    
+    
+}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
