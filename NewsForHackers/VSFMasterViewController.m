@@ -15,6 +15,7 @@
 
 @interface VSFMasterViewController () {
     NSMutableArray *_objects;
+    NSArray *_hnObjectNodes;
 }
 @end
 
@@ -33,7 +34,10 @@
     
     NSString *hnObjectsXpathQueryString = @"//td[@class='title']/a";
     NSArray *hnObjectsNodes = [hnObjectsParser searchWithXPathQuery:hnObjectsXpathQueryString];
-    NSMutableArray *newHNObjects = [[NSMutableArray alloc] initWithCapacity:0];
+    
+    _hnObjectNodes = hnObjectsNodes;
+    
+    /*NSMutableArray *newHNObjects = [[NSMutableArray alloc] initWithCapacity:0];
     for (TFHppleElement *element in hnObjectsNodes) {
         VSFHackerNewsObject *hnObject = [[VSFHackerNewsObject alloc] init];
         [newHNObjects addObject:hnObject];
@@ -49,11 +53,26 @@
     //NSLog(@"%@", newHNObjects);
     
     //Debugging script
-    /*for (VSFHackerNewsObject *hnobject in newHNObjects) {
+    for (VSFHackerNewsObject *hnobject in newHNObjects) {
         NSLog(@"%@, %@", hnobject.title, hnobject.url);
     }*/
                                         
     
+}
+
+- (void) getNextFive: (NSArray *) hnObjectNodes {
+    NSMutableArray *newHNObjects = [[NSMutableArray alloc] initWithCapacity:0];
+    for (int i = 0; i <= 5; i++) {
+        TFHppleElement *element = hnObjectNodes[i];
+        VSFHackerNewsObject *hnObject = [[VSFHackerNewsObject alloc] init];
+        [newHNObjects addObject:hnObject];
+        
+        hnObject.title = [[element firstChild] content];
+        hnObject.url = [element objectForKey:@"href"];
+        [hnObject getLargestImage];
+        NSLog(@"%@", hnObject.img);
+    }
+    _objects = newHNObjects;
 }
 
 
@@ -63,6 +82,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self loadHackerNewsObjects];
+    [self getNextFive:_hnObjectNodes];
 }
 
 - (void)didReceiveMemoryWarning
@@ -95,7 +115,7 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 320;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -116,10 +136,7 @@
     //cell.imageView.image = thisHNObject.img;
     if (thisHNObject.img) {
         cell.hnImage.image = thisHNObject.img;
-    } else {
-        cell.hnImage.image = [UIImage imageWithContentsOfFile:@"Default_tablecell.png"];
     }
-    
     return cell;
 }
 

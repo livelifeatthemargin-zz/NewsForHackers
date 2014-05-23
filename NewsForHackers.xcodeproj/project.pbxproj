@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DC72C0C319272F4A00125CEF /* Default_tablecell.png in Resources */ = {isa = PBXBuildFile; fileRef = DC72C0C219272F4A00125CEF /* Default_tablecell.png */; };
-		DC72C0C51927352900125CEF /* VSFTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC72C0C41927352900125CEF /* VSFTableViewCell.xib */; };
 		DC72C0C81927362000125CEF /* VSFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DC72C0C71927362000125CEF /* VSFTableViewCell.m */; };
 		DC7C3C7E192408E000C6E493 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C7D192408E000C6E493 /* Foundation.framework */; };
 		DC7C3C80192408E000C6E493 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC7C3C7F192408E000C6E493 /* CoreGraphics.framework */; };
@@ -30,6 +29,7 @@
 		DC7C3CBE1924090C00C6E493 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3CBA1924090C00C6E493 /* TFHppleElement.m */; };
 		DC7C3CBF1924090C00C6E493 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3CBC1924090C00C6E493 /* XPathQuery.m */; };
 		DC7C3CC419240AB000C6E493 /* VSFHackerNewsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC7C3CC319240AB000C6E493 /* VSFHackerNewsObject.m */; };
+		DCB993B9192F1BC90016B012 /* VSFTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB993B8192F1BC90016B012 /* VSFTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		DC72C0C219272F4A00125CEF /* Default_tablecell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default_tablecell.png; path = NewsForHackers/Default_tablecell.png; sourceTree = "<group>"; };
-		DC72C0C41927352900125CEF /* VSFTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSFTableViewCell.xib; sourceTree = "<group>"; };
 		DC72C0C61927362000125CEF /* VSFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSFTableViewCell.h; sourceTree = "<group>"; };
 		DC72C0C71927362000125CEF /* VSFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSFTableViewCell.m; sourceTree = "<group>"; };
 		DC7C3C7A192408E000C6E493 /* NewsForHackers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsForHackers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +76,7 @@
 		DC7C3CBC1924090C00C6E493 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		DC7C3CC219240AB000C6E493 /* VSFHackerNewsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSFHackerNewsObject.h; sourceTree = "<group>"; };
 		DC7C3CC319240AB000C6E493 /* VSFHackerNewsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSFHackerNewsObject.m; sourceTree = "<group>"; };
+		DCB993B8192F1BC90016B012 /* VSFTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSFTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,7 @@
 				DC7C3C8F192408E000C6E493 /* Main.storyboard */,
 				DC7C3C92192408E000C6E493 /* VSFMasterViewController.h */,
 				DC7C3C93192408E000C6E493 /* VSFMasterViewController.m */,
-				DC72C0C41927352900125CEF /* VSFTableViewCell.xib */,
+				DCB993B8192F1BC90016B012 /* VSFTableViewCell.xib */,
 				DC72C0C61927362000125CEF /* VSFTableViewCell.h */,
 				DC72C0C71927362000125CEF /* VSFTableViewCell.m */,
 				DC7C3C95192408E000C6E493 /* VSFDetailViewController.h */,
@@ -296,7 +296,7 @@
 				DC72C0C319272F4A00125CEF /* Default_tablecell.png in Resources */,
 				DC7C3C99192408E000C6E493 /* Images.xcassets in Resources */,
 				DC7C3C88192408E000C6E493 /* InfoPlist.strings in Resources */,
-				DC72C0C51927352900125CEF /* VSFTableViewCell.xib in Resources */,
+				DCB993B9192F1BC90016B012 /* VSFTableViewCell.xib in Resources */,
 				DC7C3C91192408E000C6E493 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
